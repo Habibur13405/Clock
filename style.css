@@ -1,0 +1,73 @@
+  *{
+  margin: 0;
+  padding: 0;
+  
+}
+  html,body{
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Galada', cursive;
+  font-family: 'Patua One', cursive;
+  background: black;
+ }
+.wrapper{
+  margin: 50% auto 0;
+  height: 100px;
+  width: 340px;
+  position: relative;
+  background: linear-gradient(135deg, #00D0FF69, #7BFF0069, #00FFE069);
+  border-radius: 10px;
+  cursor: default;
+  animation: animate 2s linear infinite;
+}
+.wrapper .display,
+.wrapper span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper .display{
+  z-index: 999;
+  height: 85px;
+  width: 325px;
+  background: #000000;
+  border-radius: 6px;
+  text-align: center;
+}
+.display #time{
+  line-height: 80px;
+  font-size: 40px;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #FF7F7F82, #E4FF0082, #00F4FF82);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.wrapper span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}
+.wrapper span:first-child{
+  filter: blur(7px);
+}
+.wrapper span:last-child{
+  filter: blur(20px);
+}
+
+  .text h2{
+    margin-top: 20px;
+    opacity: .5;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+/* respective*/
